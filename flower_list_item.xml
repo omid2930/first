@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/flower_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/armeria_allicaea"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/flower_name"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/flower_image"
+        android:text="Ameria Allicaea"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/flower_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/flower_name"
+        android:layout_alignLeft="@id/flower_name"
+        android:text="test category"
+        android:textSize="16sp"
+        android:textColor="#767676"
+        android:textStyle="italic"
+        />
+
+
+    <TextView
+        android:id="@+id/flower_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15.99 $"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/flower_image"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginBottom="6dp"
+        />
+
+
+
+
+</RelativeLayout>
